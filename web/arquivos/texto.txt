@@ -1,0 +1,10 @@
+<h1> Lista de itens pro churrasco </h1>
+<hr />
+
+<ul>
+  <li>3 kilos de alcatra</li>
+  <li>2 kilos de linguicinha</li>
+  <li>2 caixas de cerveja</li>  
+</ul>
+
+<img src="" />

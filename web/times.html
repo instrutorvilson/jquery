@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <label>Time A</label>
+        <input type="number" id="timeA" />
+         <br />
+        <label>Time B</label>
+        <input type="number" id="timeB" />
+        <hr />
+        <div>
+            <img src="" alt="Sem imagem"/>
+        </div>
+        <div>
+            <p></p>
+        </div>        
+        <script>
+            $(document).ready(function(){
+                $("input").blur(function(){
+                    var timea = $("#timeA").val();
+                    var timeb = $("#timeB").val();
+                    if(timea < timeb){
+                        $("img").attr("src","imagens/palmeiras.png");
+                        $("p").load("arquivos/palmeiras.txt");
+                    }else{
+                       $("img").attr("src","imagens/atletico.png"); 
+                       $("p").load("arquivos/atletico.txt");
+                    }                    
+                });
+            });
+        </script>
+    </body>
+</html>

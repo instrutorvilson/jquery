@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            img{
+                width: 600px;
+                height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="imagens/carro1.jfif" alt="Carro 1"/>
+        
+        <button>trocar imagem</button>
+        <script>
+             $(document).ready(function(){
+                 var clique = 1;
+                 
+                 $("button").click(function(){
+                     if(clique===1){
+                       $("img").attr("src","imagens/carro2.jfif");
+                       clique = 0;
+                     }else{
+                       $("img").attr("src","imagens/carro1.jfif");
+                       clique = 1;  
+                     }                       
+                 });
+             });
+        </script>    
+            
+    </body>
+</html>

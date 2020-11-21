@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .red{color: red}
+            .blue{color: blue}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Um</li>
+            <li>Dois</li>
+            <li>Três</li>
+        </ul>
+        <ul class="blue">
+            <li>Um</li>
+            <li>Dois</li>
+            <li>Três</li>
+        </ul>
+        
+        <button id="bt1">Esconde primeiro item</button>
+        <button id="bt2"> Esconde primeiro de cada lista</button>
+        <button id="bt3">adiciona css ao item</button>
+        
+    <script>
+        $(document).ready(function(){
+            $("#bt1").click(function(){
+                $("ul li:first").toggle();
+            });
+            
+            $("#bt2").click(function(){
+                $("ul.blue").removeClass("blue");
+                $("ul").toggleClass("red");
+            });
+            
+            $("#bt3").click(function(){
+                $("ul li:first").css({"color":"yellow","font-size":"28px"});
+            });            
+        });
+    </script>
+    </body>
+</html>

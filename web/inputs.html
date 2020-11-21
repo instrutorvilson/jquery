@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .estiloLabelRadio{color: aqua}
+        </style>    
+            
+    </head>
+    <body>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Informe seu nome" />
+        <br/>
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Informe a senha" />        
+       
+        <input type="button" value="Salvar" />        
+        <br />
+        <input id="m" type="radio" value="M" name="sexo" /> 
+        <label class="estiloLabelRadio" for="m">Masculino</label>
+        
+        <input id="f" type="radio" value="F" name="sexo"/>
+        <label class="estiloLabelRadio" for="f">Feminino</label>
+        <button>Ola </button>        
+        <script>
+            $(document).ready(function(){
+                $(":button").click(function(){
+                    $(":radio").hide();
+                    $(".estiloLabelRadio").hide();
+                });
+            });
+        </script>        
+        
+    </body>
+</html>
